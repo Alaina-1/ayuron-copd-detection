@@ -1,95 +1,60 @@
-<section class="grid">
-  <div>
-    <article class="card">
-      <div class="section-title"><h2>Overview</h2><span class="pill">Non-invasive · Mobile</span></div>
-      <p>Chronic Obstructive Pulmonary Disease (COPD) is a leading cause of morbidity worldwide. AYURON uses smartphone-recorded audio (voice &amp; cough), converts it into spectrograms, and applies machine learning to detect acoustic biomarkers associated with COPD — enabling early, low-cost screening especially suited for rural and resource-limited settings.</p>
-    </article>
+# AYURON — ML-Based COPD Detection & Holistic Respiratory Care  
 
-    <article class="card">
-      <h2>Primary Objectives</h2>
-      <ul>
-        <li>Develop an accurate ML system to detect COPD from voice &amp; cough audio recorded via smartphones.</li>
-        <li>Classify COPD severity stages using advanced spectrogram analysis and deep learning.</li>
-        <li>Integrate personalized Ayurvedic remedy suggestions in collaboration with qualified practitioners.</li>
-        <li>Deliver a holistic care pathway: <em>Aushadhi</em> (herbal remedies), <em>Pranayama</em> (breathing practices), and <em>Swasthavritta</em> (lifestyle hygiene) tailored by <em>Prakriti</em> analysis.</li>
-      </ul>
-    </article>
+Chronic Obstructive Pulmonary Disease (COPD) remains a major global health concern, particularly in low-resource and rural areas where conventional diagnostic tools are costly and inaccessible.  
 
-    <article class="card">
-      <h2>Methodology</h2>
-      <ol>
-        <li><strong>Data Acquisition:</strong> Recordings captured on mobile phone microphones (voice, cough).</li>
-        <li><strong>Preprocessing:</strong> Noise reduction, normalization, conversion to spectrograms (STFT, Mel-spectrograms).</li>
-        <li><strong>Feature Extraction:</strong> CNN-friendly spectrogram tensors; time–frequency features and handcrafted features (MFCCs, spectral centroid, bandwidth).</li>
-        <li><strong>Modeling:</strong> Deep CNNs / transfer learning (e.g., EfficientNet, ResNet variants) and ensemble classifiers for presence &amp; severity staging.</li>
-        <li><strong>Evaluation:</strong> Cross-validation, sensitivity/specificity analysis, ROC-AUC, confusion matrices, and real-world field testing.</li>
-      </ol>
-    </article>
+**AYURON** presents a **non-invasive, mobile-friendly tool** for early screening of COPD. It uses **voice and cough recordings** captured via smartphones, converts them into **spectrograms**, and applies **machine learning** to identify sound patterns linked to COPD. The goal is to make early detection easier and more accessible, especially in rural and underserved areas.  
 
-    <article class="card">
-      <h2>Holistic Care Integration (IKS)</h2>
-      <p>AYURON augments ML screening with Indian Knowledge Systems to provide person-centric care:</p>
-      <ul>
-        <li><strong>Aushadhi:</strong> Evidence-backed Ayurvedic herbal suggestions (provided in collaboration with registered practitioners).</li>
-        <li><strong>Pranayama:</strong> Tailored breathing exercises to improve lung function and reduce symptoms.</li>
-        <li><strong>Swasthavritta:</strong> Lifestyle and hygiene guidelines to reduce environmental triggers and promote respiratory health.</li>
-        <li><strong>Prakriti analysis:</strong> Personalized recommendations based on an individual's constitution.</li>
-      </ul>
-    </article>
+Beyond detection, the framework incorporates **Indian Knowledge Systems (IKS)** to offer **holistic care** for respiratory health. It integrates:  
+- **Aushadhi**: Ayurvedic herbal remedies  
+- **Pranayama**: Yogic breathing techniques  
+- **Swasthavritta**: Lifestyle and hygiene practices  
+- **Prakriti Analysis**: Personalized care based on an individual’s constitution  
 
-    <article class="card">
-      <h2>Impact &amp; Outcomes</h2>
-      <ul>
-        <li>Low-cost, scalable screening for underserved and rural areas.</li>
-        <li>Early detection enabling timely clinical referral and intervention.</li>
-        <li>Holistic symptom management and improved patient outcomes through integrated care pathways.</li>
-      </ul>
-    </article>
+---
 
-    <article class="card">
-      <h2>Future Scope</h2>
-      <ul>
-        <li>Extend to other respiratory conditions (asthma, bronchitis, pneumonia).</li>
-        <li>Deploy within telemedicine platforms and community health programs.</li>
-        <li>Integrate with wearables / IoT for continuous monitoring.</li>
-        <li>Clinical trials and regulatory pathway for medical classification use.</li>
-      </ul>
-    </article>
+## 🎯 Primary Objectives  
+- Develop an accurate ML-based system to detect COPD from **voice and cough audio inputs** recorded on mobile phones.  
+- Enable **precise classification** of COPD severity stages using spectrogram analysis and advanced ML.  
+- Integrate **personalized Ayurvedic remedy suggestions** in collaboration with qualified doctors.  
+- Support **holistic patient care** and symptom management through IKS practices.  
 
-  </div>
+---
 
-  <aside class="aside">
-    <div class="card">
-      <h3>Quick Start (for researchers)</h3>
-      <p class="mono">Steps to reproduce core pipeline:</p>
-      <ol>
-        <li>Collect mobile audio samples in WAV format at 16–44.1 kHz.</li>
-        <li>Preprocess: denoise, trim silence, normalize amplitude.</li>
-        <li>Generate Mel-spectrograms (e.g., 128 Mel bands, 2048 window).</li>
-        <li>Train CNN models with data augmentation (time-shift, noise, pitch).</li>
-        <li>Validate with stratified cross-validation and external field test set.</li>
-      </ol>
-      <p><a class="btn" href="#">Download sample dataset »</a></p>
-    </div>
+## 🛠️ Methodology  
+1. **Data Acquisition**  
+   - Collect cough and voice recordings via mobile microphones.  
+2. **Preprocessing**  
+   - Noise reduction, normalization, and conversion into spectrograms.  
+3. **Feature Extraction & Modeling**  
+   - Use CNN-friendly spectrograms and handcrafted features (MFCCs, spectral features).  
+   - Train and evaluate deep learning models for COPD detection and severity staging.  
+4. **Integration with Holistic Care**  
+   - Provide tailored Ayurvedic remedies and lifestyle practices through digital platforms.  
 
-    <div class="card">
-      <h3>Ethics &amp; Safety</h3>
-      <ul>
-        <li>Not a replacement for clinical diagnosis — intended as a screening aid.</li>
-        <li>Data privacy: anonymize recordings, store securely, obtain informed consent.</li>
-        <li>All Ayurvedic recommendations must be validated and authorized by licensed practitioners.</li>
-      </ul>
-    </div>
+---
 
-    <div class="card">
-      <h3>Contributors</h3>
-      <p>Interdisciplinary team: ML researchers, clinicians, and Ayurvedic practitioners.</p>
-      <p><strong>Contact:</strong> <span class="mono">research@ayuron.example</span></p>
-    </div>
+## 🌍 Impact  
+- **Accessible & low-cost** COPD screening in underserved areas.  
+- **Early detection** enabling timely clinical referral and intervention.  
+- **Holistic symptom management** combining AI-driven insights with traditional practices.  
 
-  </aside>
-</section>
+---
 
-<footer>
-  <small>© AYURON Project — For research &amp; non-commercial use. Please cite appropriately when used in publications.</small>
-</footer>
+## 🔮 Future Scope  
+- Expansion to other respiratory diseases (Asthma, Bronchitis, Pneumonia).  
+- Integration with **telemedicine platforms** and community health programs.  
+- Real-time monitoring via **wearables and IoT devices**.  
+- Clinical validation for regulatory approvals.  
+
+---
+
+## 👩‍⚕️ Contributors  
+- Interdisciplinary team of **AI researchers, clinicians, and Ayurvedic practitioners**.  
+- For inquiries: `research@ayuron.example`  
+
+---
+
+📌 **Note:**  
+AYURON is a **screening support tool** and not a replacement for professional medical diagnosis. All Ayurvedic remedies must be administered under the guidance of licensed practitioners.  
+
+---
