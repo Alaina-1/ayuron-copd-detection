@@ -1,0 +1,208 @@
+/* Container */
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f9fbff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero Section Centered */
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.hero-center h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-center p {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+
+.brand {
+  color: #1e40af;
+}
+
+/* CTA Button */
+.cta-btn {
+  background: #1e40af;
+  color: white;
+  padding: 18px 36px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #3b82f6;
+}
+
+/* Recorder Card */
+.hero-recorder-card {
+  margin-top: 20px;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons inside card */
+.btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-green {
+  background: #10b981;
+  color: white;
+}
+
+.btn-green:hover {
+  background: #059669;
+}
+
+.btn-red {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-red:hover {
+  background: #dc2626;
+}
+
+/* Loading and result */
+.loading {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #1e40af;
+}
+
+.result {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.result h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.result p {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.label {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.copd {
+  background: #f87171;
+  color: white;
+}
+
+.healthy {
+  background: #34d399;
+  color: white;
+}
+
+/* Features & How it Works Section */
+.features,
+.how-it-works {
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  background: #f3f4f6;
+}
+
+.features h2,
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1e40af;
+}
+
+.feature-cards,
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-card,
+.step {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3,
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #1e40af;
+  color: white;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-center h1 {
+    font-size: 3rem;
+  }
+
+  .hero-center p {
+    font-size: 1.25rem;
+  }
+
+  .hero-recorder-card,
+  .feature-card,
+  .step {
+    padding: 20px;
+  }
+
+  .cta-btn {
+    font-size: 1.25rem;
+    padding: 14px 28px;
+  }
+}

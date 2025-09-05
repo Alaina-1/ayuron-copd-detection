@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+uploads/
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+
+# Mac OS junk
+.DS_Store
